@@ -1078,6 +1078,7 @@ include '../setting.php';
                     closeCustomPopup();
                     document.getElementById("customReportForm").reset(); // Reset form
                     document.getElementById("customFileUploadsContainer").innerHTML = ""; // Clear dynamic file inputs
+                    window.location.href = "<?php echo $baseurl?>/thankyou.php";
                 } else {
                     alert("An error occurred while submitting your report. Please try again.");
                 }
